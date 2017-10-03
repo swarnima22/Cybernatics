@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>
+			This is the display name of my J2EE component
+		</display-name>
+		<servlet-name>InitServlet</servlet-name>
+		<servlet-class>com.cyber.util.InitServlet</servlet-class>
+		<init-param>
+			<param-name>config</param-name>
+			<param-value>/WEB-INF/config/system.properties</param-value>
+		</init-param>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>InitServlet</servlet-name>
+		<url-pattern>/InitServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>
+			This is the display name of my J2EE component
+		</display-name>
+		<servlet-name>RegisterAction</servlet-name>
+		<servlet-class>com.cyber.action.RegisterAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>
+			This is the display name of my J2EE component
+		</display-name>
+		<servlet-name>LoginAction</servlet-name>
+		<servlet-class>com.cyber.action.LoginAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>
+			This is the display name of my J2EE component
+		</display-name>
+		<servlet-name>LogoutAction</servlet-name>
+		<servlet-class>com.cyber.action.LogoutAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>
+			This is the display name of my J2EE component
+		</display-name>
+		<servlet-name>ChangePasswordAction</servlet-name>
+		<servlet-class>
+			com.cyber.action.ChangePasswordAction
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>
+			This is the display name of my J2EE component
+		</display-name>
+		<servlet-name>CheckUserAction</servlet-name>
+		<servlet-class>com.cyber.action.CheckUserAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>
+			This is the display name of my J2EE component
+		</display-name>
+		<servlet-name>ViewProfileAction</servlet-name>
+		<servlet-class>
+			com.cyber.action.ViewProfileAction
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>
+			This is the display name of my J2EE component
+		</display-name>
+		<servlet-name>UpdateUserProfileAction</servlet-name>
+		<servlet-class>
+			com.cyber.action.UpdateUserProfileAction
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>
+			This is the display name of my J2EE component
+		</display-name>
+		<servlet-name>RecoverPasswordAction</servlet-name>
+		<servlet-class>
+			com.cyber.action.RecoverPasswordAction
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>
+			This is the display name of my J2EE component
+		</display-name>
+		<servlet-name>NewPasswordAction</servlet-name>
+		<servlet-class>
+			com.cyber.action.NewPasswordAction
+		</servlet-class>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddNewCaseAction</servlet-name>
+    <servlet-class>com.cyber.action.AddNewCaseAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TipsSuggessitionsAction</servlet-name>
+    <servlet-class>com.cyber.action.TipsSuggessitionsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewCasesAction</servlet-name>
+    <servlet-class>com.cyber.action.ViewCasesAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewUpdateCases</servlet-name>
+    <servlet-class>com.cyber.action.ViewUpdateCasesAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateCase</servlet-name>
+    <servlet-class>com.cyber.action.UpdateCaseAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteCases</servlet-name>
+    <servlet-class>com.cyber.action.DeleteCasesAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewCaseFiles</servlet-name>
+    <servlet-class>com.cyber.action.ViewCaseFilesAction</servlet-class>
+  </servlet>
+<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OutboxAction</servlet-name>
+    <servlet-class>com.cyber.action.OutboxAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SendMailAction</servlet-name>
+    <servlet-class>com.cyber.action.SendMailAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewMailBody</servlet-name>
+    <servlet-class>com.cyber.action.ViewMailBody</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ComposeMail</servlet-name>
+    <servlet-class>com.cyber.action.ComposeMailAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteMailsAction</servlet-name>
+    <servlet-class>com.cyber.action.DeleteMailsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewAgencyChiefAction</servlet-name>
+    <servlet-class>com.cyber.action.ViewAgencyChiefAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AgencyChieffAction</servlet-name>
+    <servlet-class>com.cyber.action.AgencyChieffAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddAgencyAction</servlet-name>
+    <servlet-class>com.cyber.action.AddAgencyAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewAgencyAction</servlet-name>
+    <servlet-class>com.cyber.action.ViewAgencyAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteUserAction</servlet-name>
+    <servlet-class>com.cyber.action.DeleteUserAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AssignCasesAction</servlet-name>
+    <servlet-class>com.cyber.action.AssignCasesAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddAssignCaseAction</servlet-name>
+    <servlet-class>com.cyber.action.AddAssignCaseAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewAssignedCasesAction</servlet-name>
+    <servlet-class>com.cyber.action.ViewAssignedCasesAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewAgencyCaseAction</servlet-name>
+    <servlet-class>com.cyber.action.ViewAgencyCaseAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AssignAgencyCaseAction</servlet-name>
+    <servlet-class>com.cyber.action.AssignAgencyCaseAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddAgentCaseAction</servlet-name>
+    <servlet-class>com.cyber.action.AddAgentCaseAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewAgentCaseAssingedAction</servlet-name>
+    <servlet-class>com.cyber.action.ViewAgentCaseAssingedAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewAgentCaseAction</servlet-name>
+    <servlet-class>com.cyber.action.ViewAgentCaseAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddCaseEvidences</servlet-name>
+    <servlet-class>com.cyber.action.AddCaseEvidences</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewTipsAction</servlet-name>
+    <servlet-class>com.cyber.action.ViewTipsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteTipsAction</servlet-name>
+    <servlet-class>com.cyber.action.DeleteTipsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ResumePostAction</servlet-name>
+    <servlet-class>com.cyber.action.ResumePostAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewApplecantResume</servlet-name>
+    <servlet-class>com.cyber.action.ViewApplecantResume</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteResume</servlet-name>
+    <servlet-class>com.cyber.action.DeleteResume</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExportXLS</servlet-name>
+    <servlet-class>com.cyber.export.ExportXLS</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExportPDF</servlet-name>
+    <servlet-class>com.cyber.export.ExportTXT</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>CheckUserAction</servlet-name>
+		<url-pattern>/CheckUserAction</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>RegisterAction</servlet-name>
+		<url-pattern>/RegisterAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginAction</servlet-name>
+		<url-pattern>/LoginAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LogoutAction</servlet-name>
+		<url-pattern>/LogoutAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChangePasswordAction</servlet-name>
+		<url-pattern>/ChangePasswordAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewProfileAction</servlet-name>
+		<url-pattern>/ViewProfileAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateUserProfileAction</servlet-name>
+		<url-pattern>/UpdateUserProfileAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RecoverPasswordAction</servlet-name>
+		<url-pattern>/RecoverPasswordAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>NewPasswordAction</servlet-name>
+		<url-pattern>/NewPasswordAction</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddNewCaseAction</servlet-name>
+    <url-pattern>/AddNewCaseAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TipsSuggessitionsAction</servlet-name>
+    <url-pattern>/TipsSuggessitionsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewCasesAction</servlet-name>
+    <url-pattern>/ViewCasesAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewUpdateCases</servlet-name>
+    <url-pattern>/ViewUpdateCases</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateCase</servlet-name>
+    <url-pattern>/UpdateCase</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteCases</servlet-name>
+    <url-pattern>/DeleteCases</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewCaseFiles</servlet-name>
+    <url-pattern>/ViewCaseFiles</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>OutboxAction</servlet-name>
+    <url-pattern>/OutboxAction</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>SendMailAction</servlet-name>
+    <url-pattern>/SendMailAction</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ViewMailBody</servlet-name>
+    <url-pattern>/ViewMailBody</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ComposeMail</servlet-name>
+    <url-pattern>/ComposeMail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteMailsAction</servlet-name>
+    <url-pattern>/DeleteMailsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewAgencyChiefAction</servlet-name>
+    <url-pattern>/ViewAgencyChiefAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AgencyChieffAction</servlet-name>
+    <url-pattern>/AgencyChieffAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddAgencyAction</servlet-name>
+    <url-pattern>/AddAgencyAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewAgencyAction</servlet-name>
+    <url-pattern>/ViewAgencyAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteUserAction</servlet-name>
+    <url-pattern>/DeleteUserAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AssignCasesAction</servlet-name>
+    <url-pattern>/AssignCasesAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddAssignCaseAction</servlet-name>
+    <url-pattern>/AddAssignCaseAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewAssignedCasesAction</servlet-name>
+    <url-pattern>/ViewAssignedCasesAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewAgencyCaseAction</servlet-name>
+    <url-pattern>/ViewAgencyCaseAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AssignAgencyCaseAction</servlet-name>
+    <url-pattern>/AssignAgencyCaseAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddAgentCaseAction</servlet-name>
+    <url-pattern>/AddAgentCaseAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewAgentCaseAssingedAction</servlet-name>
+    <url-pattern>/ViewAgentCaseAssingedAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewAgentCaseAction</servlet-name>
+    <url-pattern>/ViewAgentCaseAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddCaseEvidences</servlet-name>
+    <url-pattern>/AddCaseEvidences</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewTipsAction</servlet-name>
+    <url-pattern>/ViewTipsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteTipsAction</servlet-name>
+    <url-pattern>/DeleteTipsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResumePostAction</servlet-name>
+    <url-pattern>/ResumePostAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewApplecantResume</servlet-name>
+    <url-pattern>/ViewApplecantResume</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteResume</servlet-name>
+    <url-pattern>/DeleteResume</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExportXLS</servlet-name>
+    <url-pattern>/ExportXLS</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExportPDF</servlet-name>
+    <url-pattern>/ExportPDF</url-pattern>
+  </servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>Home.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
